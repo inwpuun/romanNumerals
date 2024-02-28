@@ -1,5 +1,8 @@
 import { romanNumerals } from "./romanNumerals";
 
+/**
+ * test romanNumerals function
+ * */
 function romanNumeralsTesting(romanNumeral: string, expected: number) {
 	const result = romanNumerals(romanNumeral);
 	console.log(

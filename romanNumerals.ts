@@ -1,3 +1,8 @@
+/**
+ * convert roman numeral to decimal number
+ * @param romanNumeral
+ * @returns decimal number
+ * */
 export function romanNumerals(romanNumeral: string) {
 	const romanNumeralMap: { [key: string]: number } = {
 		I: 1,
