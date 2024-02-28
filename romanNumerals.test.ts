@@ -1,10 +1,11 @@
+import { romanNumerals } from "./romanNumerals";
+
 function romanNumeralsTesting(romanNumeral: string, expected: number) {
 	const result = romanNumerals(romanNumeral);
 	console.log(
 		result === expected ? "Checked" : "Not Checked",
-		romanNumerals(romanNumeral),
-		expected,
 		result,
+		expected,
 	);
 }
 
@@ -35,3 +36,7 @@ romanNumeralsTesting("XXXIX", 39);
 romanNumeralsTesting("MCMIII", 1903);
 romanNumeralsTesting("MMVI", 2006);
 romanNumeralsTesting("MCMXLIV", 1944);
+
+romanNumeralsTesting("", NaN);
+romanNumeralsTesting("IaI", NaN);
+romanNumeralsTesting("Ia", NaN);
